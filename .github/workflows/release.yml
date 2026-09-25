@@ -26,7 +26,8 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           gh release create "$GITHUB_REF_NAME" \
-            "dist/mesh-grades-extension-${GITHUB_REF_NAME#v}.zip" \
+            "dist/mesh-grades-extension-${GITHUB_REF_NAME#v}.zip#Установочный ZIP расширения" \
             --verify-tag \
             --title "Успеваемость ребенка $GITHUB_REF_NAME" \
+            --notes "Для установки скачайте mesh-grades-extension-${GITHUB_REF_NAME#v}.zip. Ссылки Source code (zip) и Source code (tar.gz) GitHub добавляет автоматически: это исходники репозитория, а не установочный архив расширения." \
             --generate-notes

@@ -6,7 +6,7 @@
 
 ### Chrome
 
-1. Скачайте архив `mesh-grades-extension-X.Y.Z.zip` со страницы [Releases](https://github.com/idfactory/mesh-grades-extension/releases) и распакуйте его. В корне распакованной папки должен быть `manifest.json`.
+1. Скачайте **установочный архив** `mesh-grades-extension-X.Y.Z.zip` со страницы [Releases](https://github.com/idfactory/mesh-grades-extension/releases) и распакуйте его. GitHub также автоматически показывает `Source code (zip)` и `Source code (tar.gz)` — это исходники репозитория, их не нужно выбирать для установки. В корне распакованной папки должен быть `manifest.json`.
 2. Откройте `chrome://extensions`, включите **Режим разработчика**.
 3. Нажмите **Загрузить распакованное расширение** и выберите папку с `manifest.json`.
 
