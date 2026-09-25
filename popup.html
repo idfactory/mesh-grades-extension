@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Успеваемость ребенка</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">МЭШ</div>
+        <h1>Успеваемость ребенка</h1>
+        <p>Оценки собираются из открытого дневника и остаются в этом браузере.</p>
+      </header>
+
+      <div id="status" class="status" role="status" aria-live="polite">Загружаю сохранённый результат…</div>
+
+      <section id="results" hidden>
+        <p id="snapshot-time" class="snapshot-time"></p>
+        <div id="summary"></div>
+        <button id="refresh" class="secondary" type="button">Обновить результат</button>
+        <label class="option">
+          <input id="anonymize" type="checkbox" checked>
+          <span>Скрыть имена детей в запросе для ИИ</span>
+        </label>
+        <button id="copy" class="primary" type="button">Скопировать запрос для ИИ</button>
+        <p class="hint">Запрос попадёт в буфер обмена. Расширение никуда его не отправляет.</p>
+        <section class="ai-links" aria-labelledby="ai-links-title">
+          <h2 id="ai-links-title">Анализ с ИИ</h2>
+          <p>Скопируйте запрос выше, откройте чат и вставьте текст.</p>
+          <div class="ai-links-grid">
+            <a href="https://alice.yandex.ru/" target="_blank" rel="noopener noreferrer">Алиса AI ↗</a>
+            <a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer">DeepSeek ↗</a>
+            <a href="https://chat.qwen.ai/" target="_blank" rel="noopener noreferrer">Qwen ↗</a>
+            <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT ↗</a>
+          </div>
+        </section>
+        <button id="clear" class="text-button" type="button">Удалить сохранённые данные</button>
+      </section>
+
+      <button id="retry" class="secondary" type="button" hidden>Проверить снова</button>
+      <p id="version" class="version"></p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

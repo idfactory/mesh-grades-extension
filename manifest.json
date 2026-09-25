@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Успеваемость ребенка",
+  "version": "1.2.0",
+  "description": "Собирает оценки из открытого дневника МЭШ и готовит запрос для ИИ.",
+  "permissions": ["tabs", "scripting", "clipboardWrite", "storage"],
+  "host_permissions": ["https://school.mos.ru/*"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Собрать оценки МЭШ",
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon-48.png"
+  }
+}
