@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Успеваемость ребенка",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Собирает оценки из открытого дневника МЭШ и готовит запрос для ИИ.",
   "permissions": ["tabs", "scripting", "clipboardWrite", "storage"],
   "host_permissions": ["https://school.mos.ru/*"],
